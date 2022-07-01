@@ -1,0 +1,144 @@
+@import "react-slideshow-image/dist/styles.css";
+
+:root {
+  --bg-primary: #847b45;
+  --bg-secondary: #f4debe;
+  --bg-tertiary: #4d675a;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.App {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  color: var(--bg-tertiary);
+}
+
+.shred-stick {
+  height: auto;
+  width: 100%;
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: cover;
+}
+
+.react-slideshow-container {
+  position: relative;
+}
+
+.each-slide {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  margin: 2rem auto 0;
+  background: var(--bg-secondary);
+}
+[data-type="prev"] {
+  position: absolute;
+  left: 5%;
+}
+[data-type="next"] {
+  position: absolute;
+  right: 5%;
+}
+
+.has-one-image {
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.each-slide img {
+  min-height: 300px;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  border-bottom: 2px dashed #f5aa5f;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+
+.col-4, 
+.col-8 {
+  width: 100%;
+}
+
+.item-price {
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background: var(--bg-primary);
+  padding: 1rem 2rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 60px;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  transition: .5s;
+}
+
+.btn-primary:hover {
+  background: var(--bg-primary);
+}
+
+.hero-full {
+  background: var(--bg-primary);
+}
+
+.hero-full h1 {
+  color: var(--bg-secondary);
+  margin-top: 0;
+  padding: 2rem 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-full p {
+  color: var(--bg-secondary);
+  padding-bottom: 2rem;
+  text-align: center;
+  margin-top: .5rem;
+}
+
+@media(min-width: 768px) {
+  .container {
+    display: flex;
+  }
+  .each-slide {
+    margin: 2rem auto
+  }
+  .ml-2 {
+    margin-left: 2rem;
+  }
+  .col-4 {
+    width: 33.333%;
+  }
+  
+  .col-8 {
+    width: 66.666%;
+  }
+}
+
+
+
